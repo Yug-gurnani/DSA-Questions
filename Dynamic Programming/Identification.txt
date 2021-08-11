@@ -1,0 +1,3 @@
+To identify a Problem or match a problem with any other problem
+DO match the format and if the answer is greater than 50% than the question can be solved using that other question.
+Every format is there in different files

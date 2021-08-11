@@ -1,0 +1,14 @@
+def maxPathSum(self, root: TreeNode) -> int:
+        def solve(root,res):
+            if root == None:
+                return 0
+            l = solve(root.left,res)
+            r = solve(root.right,res)
+            
+            temp = max(max(l,r)+root.val,root.val)
+            ans = max(temp,l+r+root.val)
+            res[0] = max(res[0],ans)
+            return temp
+        res = [float('-inf')]
+        solve(root,res)
+        return res[0]

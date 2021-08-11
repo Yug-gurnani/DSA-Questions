@@ -1,0 +1,20 @@
+def maxPathSum(root):
+    # code here 
+    def solve(root,res):
+        if not root:
+            return 0
+        if not root.left and not root.right:
+            return root.data
+        if not root.left:
+            return solve(root.right,res)+root.data
+        if not root.right:
+            return solve(root.left,res) + root.data
+        l = solve(root.left,res)
+        r = solve(root.right,res)
+        temp =max(l,r) + root.data
+        ans = l+r+root.data
+        res[0] = max(res[0],ans)
+        return temp
+    res = [float('-inf')]
+    solve(root,res)
+    return res[0]

@@ -1,0 +1,4 @@
+THE INPUT FORMAT WILL BE:
+1. One or two string will be given
+2. Output format would be to give a integer or print the subsequence
+3. Order matters

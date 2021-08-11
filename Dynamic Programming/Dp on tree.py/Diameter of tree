@@ -1,0 +1,15 @@
+def solve(root,res):
+    if not root:
+        return 0
+    left = solve(root.left,res)
+    right = solve(root.right,res)
+    temp = max(left,right)+1
+    ans = max(temp,1+left+right)
+    res[0] = max(ans,res[0])
+    #print(res)
+    return temp
+def diameter(root):
+    # Code here
+    res = [float('-inf')]
+    solve(root,res)
+    return res[0]

@@ -1,0 +1,1 @@
+same as knapsack but there will be unlimited supply of that thing

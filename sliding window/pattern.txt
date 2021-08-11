@@ -1,0 +1,5 @@
+first while j is less than size j++
+first do calculations in the loop
+if j-i+1 < k so j ++ 
+else
+we will generate answer from the calculation and slide the window

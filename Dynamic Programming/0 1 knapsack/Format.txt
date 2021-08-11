@@ -1,0 +1,4 @@
+THE input format would be:
+1. There will be a Array and a specific value.
+2. output format will be integer or boolean value
+3. Match the question

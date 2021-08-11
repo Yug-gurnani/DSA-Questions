@@ -1,0 +1,22 @@
+In this no extra datastructure will be used 
+This contains of 3 parts
+Base condition:
+It is same in 80%of question:
+if root == None:
+return 0 
+and some changes on the basis of problem
+
+2nd part Hypothesis:
+It remains same everytime
+left = solve(root.left,res)
+right = solve(root.right,res)
+
+3rd part:
+Induction:
+It has a basic structure but it changes a little bit in every question
+
+temp = func(  ,   )
+ans = func(temp,  )
+res = func(ans,res)
+
+Induction part works as dp as it is returning the answer of the lower trees and makes a bottom up dp
