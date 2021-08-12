@@ -3,7 +3,7 @@ https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 """
 
 class Solution:
-    def maxProfit(self, arr: List[int]) -> int:
+    def maxProfit(self, arr):
         n = len(arr)
         
         ans = 0
