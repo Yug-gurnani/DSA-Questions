@@ -2,7 +2,7 @@
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
 """
 class Solution:
-    def maxProfit(self, prices: List[int]) -> int:
+    def maxProfit(self, prices):
         n = len(prices)
         
         dp = [[0 for i in range(n)] for i in range(3)]
@@ -18,4 +18,3 @@ class Solution:
         return dp[2][n-1]
 
 
-        
